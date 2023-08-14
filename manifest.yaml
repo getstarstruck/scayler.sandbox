@@ -1,12 +1,15 @@
 display_information:
-  name: Getting Started Bolt App
+  name: Scayler
+  description: The smart Go to Market
+  background_color: "#000000"
+  long_description: Scayler helps enterprise software sellers to scale by rapidly listing their products on global B2B marketplaces. Our AI technology provides magical insights to help sellers find more buyers wanting to buy their software products now ​.
 features:
   app_home:
-    home_tab_enabled: false
+    home_tab_enabled: true
     messages_tab_enabled: true
     messages_tab_read_only_enabled: false
   bot_user:
-    display_name: BoltApp
+    display_name: Lync
     always_online: true
 oauth_config:
   scopes:
@@ -15,12 +18,15 @@ oauth_config:
       - channels:join
       - commands
       - chat:write
+      - app_mentions:read
+      - users.profile:read
       - im:history
 settings:
   event_subscriptions:
     bot_events:
       - message.channels
       - message.im
+      - app_home_opened
   interactivity:
     is_enabled: true
   org_deploy_enabled: false

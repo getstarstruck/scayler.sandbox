@@ -1,7 +1,7 @@
 {
-  "name": "bolt-js-getting-started-app",
+  "name": "Scayler",
   "version": "2.0.0",
-  "description": "Getting Started ⚡️ Bolt for JavaScript",
+  "description": "Scayler Sandbox App using ⚡️ Bolt for JavaScript",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -9,6 +9,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@slack/bolt": "^3.6.0"
+    "@slack/bolt": "^3.6.0",
+    "dotenv": "^16.3.1"
   }
 }
